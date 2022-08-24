@@ -1,13 +1,227 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 25px;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  position: relative;
+  width: 40rem;
+  height: 33rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding-top: 2rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25rem;
+  background-color: rgba(105, 104, 104, 0.75);
+  box-shadow: 0.2rem 0.2rem rgba(255, 255, 255, 0.295);
+  border-radius: 0.3rem;
+}
+
+.menu button {
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.menu button:hover {
+  background-color: rgba(240, 248, 255, 0.075);
+}
+
+.search {
+  margin-top: 2rem;
+  display: flex;
+  width: 18rem;
+  margin-left: 13rem;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.searchBar {
+  display: flex;
+  border-radius: 0.7rem;
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem rgba(51, 51, 51, 0.61);
+  align-items: center;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 11rem;
+  border-radius: 0.7rem;
+  height: 1.6rem;
+  font-size: 0.8rem;
+}
+
+.search button {
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  width: 1.3rem;
+  font-size: 1rem;
+}
+
+.search button:hover {
+  color: rgb(70, 70, 70);
+}
+
+.currentCity {
+  display: flex;
+  margin-top: 2rem;
+  width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.currentInfo {
+  color: white;
+  text-align: center;
+  width: 10rem;
+  padding: 0.5rem;
+  background-color: rgba(105, 104, 104, 0.75);
+  box-shadow: 0.2rem 0.2rem rgba(255, 255, 255, 0.295);
+  border-radius: 0.3rem;
+}
+
+.clocation {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cdayhour {
+  font-size: 0.8rem;
+}
+
+.cweather {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ctemp-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ctemp {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.currentWeather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.3rem;
+  font-size: 0.7rem;
+  width: 38%;
+  color: white;
+}
+
+.cweather-flex {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 0.3rem;
+}
+
+.forecast {
+  margin-left: auto;
+  margin-right: auto;
+  width: 32.4rem;
+  height: 7rem;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.forecast::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+.forecast::-webkit-scrollbar-track {
+  background: #f1f1f131;
+}
+
+.forecast::-webkit-scrollbar-thumb {
+  background: rgba(48, 48, 48, 0.61);
+}
+
+.label {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.label:hover {
+  color: rgb(70, 70, 70);
+}
+
+.label1 {
+  margin-left: 10%;
+}
+
+.forecast-flex {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  background-color: rgba(105, 104, 104, 0.75);
+}
+
+.forecast-flex div {
+  color: white;
+  width: 4.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0.2rem 0.2rem rgba(255, 255, 255, 0.295);
+}
+
+.creditDiv {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.credit {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+.credit1 {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
