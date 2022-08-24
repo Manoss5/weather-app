@@ -11,7 +11,6 @@ function App() {
   const [weather, setWeather] = useState({});
   const [metric, setMetric] = useState(true);
   const [city, setCity] = useState("Athens");
-  console.log(1);
 
   useEffect(() => {
     const fetchWeather = async () => {
@@ -24,10 +23,7 @@ function App() {
       setWeather(weatherData);
     };
     fetchWeather();
-    console.log(2);
   }, [metric, city]);
-
-  console.log(weather);
 
   return (
     weather.apparent_temperature && (

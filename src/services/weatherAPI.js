@@ -13,7 +13,6 @@ const date = new Date();
 const hour = date.getHours();
 
 const SearchForWeather = async (metric, city, c, p) => {
-  console.log(c);
   let coords;
   let place;
   const location = await fetch(
