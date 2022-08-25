@@ -1,3 +1,9 @@
+<a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>
+
+API data are offered under <a href="https://creativecommons.org/licenses/by-nc/4.0/"> Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) </a>
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
